@@ -27,6 +27,12 @@ int main() {
 #ifdef __llvm__
     printf("__llvm__: %d\n", __llvm__);
 #endif
+#ifdef __SUNPRO_C
+    printf("__SUNPRO_C: %#x\n", __SUNPRO_C);
+#endif
+#ifdef __SUNPRO_CC
+    printf("__SUNPRO_CC: %#x\n", __SUNPRO_CC);
+#endif
 
     printf("Operating Systems\n");
 #ifdef __gnu_linux__
@@ -40,6 +46,12 @@ int main() {
 #endif
 #ifdef __MACH__
     printf("__MACH__: %d\n", __MACH__);
+#endif
+#ifdef sun
+    printf("sun: %d\n", sun);
+#endif
+#ifdef __sun
+    printf("__sun: %d\n", __sun);
 #endif
 #ifdef __unix__
     printf("__unix__: %d\n", __unix__);
