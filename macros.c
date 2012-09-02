@@ -27,6 +27,12 @@ int main() {
 #ifdef __llvm__
     printf("__llvm__: %d\n", __llvm__);
 #endif
+#ifdef __MINGW32__
+    printf("__MINGW32__: %d\n", __MINGW32__);
+#endif
+#ifdef __MINGW64__
+    printf("__MINGW64__: %d\n", __MINGW64__);
+#endif
 #ifdef __SUNPRO_C
     printf("__SUNPRO_C: %#x\n", __SUNPRO_C);
 #endif
@@ -58,6 +64,12 @@ int main() {
 #endif
 #ifdef __unix
     printf("__unix: %d\n", __unix);
+#endif
+#ifdef _WIN32
+    printf("_WIN32: %d\n", _WIN32);
+#endif
+#ifdef _WIN64
+    printf("_WIN64: %d\n", _WIN64);
 #endif
 
     printf("Architectures\n");
