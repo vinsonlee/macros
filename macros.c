@@ -29,11 +29,23 @@ int main() {
 #endif
 
     printf("Operating Systems\n");
+#ifdef __gnu_linux__
+    printf("__gnu_linux__: %d\n", __gnu_linux__);
+#endif
+#ifdef __linux__
+    printf("__linux__: %d\n", __linux__);
+#endif
 #ifdef __APPLE__
     printf("__APPLE__: %d\n", __APPLE__);
 #endif
 #ifdef __MACH__
     printf("__MACH__: %d\n", __MACH__);
+#endif
+#ifdef __unix__
+    printf("__unix__: %d\n", __unix__);
+#endif
+#ifdef __unix
+    printf("__unix: %d\n", __unix);
 #endif
 
     printf("Architectures\n");
