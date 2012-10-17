@@ -24,6 +24,10 @@ int main() {
     printf("__GNUC_MINOR__: %d\n", __GNUC_MINOR__);
     printf("__GNUC_PATCHLEVEL__: %d\n", __GNUC_PATCHLEVEL__);
 #endif
+#ifdef __INTEL_COMPILER
+    printf("__INTEL_COMPILER: %d\n", __INTEL_COMPILER);
+    printf("__INTEL_COMPILER_BUILD_DATE: %d\n", __INTEL_COMPILER_BUILD_DATE);
+#endif
 #ifdef __llvm__
     printf("__llvm__: %d\n", __llvm__);
 #endif
