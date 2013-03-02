@@ -44,6 +44,12 @@ int main() {
     printf("__SUNPRO_CC: %#x\n", __SUNPRO_CC);
 #endif
 
+    printf("Libraries\n");
+#ifdef __GLIBC__
+    printf("__GLIBC__: %d\n", __GLIBC__);
+    printf("__GLIBC_MINOR__: %d\n", __GLIBC_MINOR__);
+#endif
+
     printf("Operating Systems\n");
 #ifdef __gnu_linux__
     printf("__gnu_linux__: %d\n", __gnu_linux__);
