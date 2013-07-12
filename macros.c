@@ -63,6 +63,9 @@ int main() {
 #ifdef __MACH__
     printf("__MACH__: %d\n", __MACH__);
 #endif
+#ifdef __OpenBSD__
+    printf("__OpenBSD__: %d\n", __OpenBSD__);
+#endif
 #ifdef sun
     printf("sun: %d\n", sun);
 #endif
