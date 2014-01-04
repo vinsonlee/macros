@@ -102,5 +102,17 @@ int main() {
     printf("__x86_64: %d\n", __x86_64);
 #endif
 
+    printf("Data Models\n");
+    printf("sizeof(int): %ld\n", (long) sizeof(int));
+    printf("sizeof(long): %ld\n", (long) sizeof(long));
+    printf("sizeof(void *): %ld\n", (long) sizeof(void *));
+    printf("sizeof(size_t): %ld\n", (long) sizeof(size_t));
+#ifdef __LP64__
+    printf("__LP64__: %d\n", __LP64__);
+#endif
+#ifdef __ILP32__
+    printf("__ILP64__: %d\n", __ILP32__);
+#endif
+
     return 0;
 }
