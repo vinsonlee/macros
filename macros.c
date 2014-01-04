@@ -111,7 +111,7 @@ int main() {
     printf("__LP64__: %d\n", __LP64__);
 #endif
 #ifdef __ILP32__
-    printf("__ILP64__: %d\n", __ILP32__);
+    printf("__ILP32__: %d\n", __ILP32__);
 #endif
 
     return 0;
