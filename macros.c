@@ -51,6 +51,9 @@ int main() {
 #endif
 
     printf("Operating Systems\n");
+#ifdef __DragonFly__
+    printf("__DragonFly__: %d\n", __DragonFly__);
+#endif
 #ifdef __gnu_linux__
     printf("__gnu_linux__: %d\n", __gnu_linux__);
 #endif
