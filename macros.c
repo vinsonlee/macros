@@ -66,6 +66,9 @@ int main() {
 #ifdef __MACH__
     printf("__MACH__: %d\n", __MACH__);
 #endif
+#ifdef __FreeBSD__
+    printf("__FreeBSD__: %d\n", __FreeBSD__);
+#endif
 #ifdef __NetBSD__
     printf("__NetBSD__: %d\n", __NetBSD__);
 #endif
