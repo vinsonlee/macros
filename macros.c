@@ -33,9 +33,13 @@ int main() {
 #endif
 #ifdef __MINGW32__
     printf("__MINGW32__: %d\n", __MINGW32__);
+    printf("__MINGW32_MAJOR_VERSION: %d\n", __MINGW32_MAJOR_VERSION);
+    printf("__MINGW32_MINOR_VERSION: %d\n", __MINGW32_MINOR_VERSION);
 #endif
 #ifdef __MINGW64__
     printf("__MINGW64__: %d\n", __MINGW64__);
+    printf("__MINGW64_VERSION_MAJOR: %d\n", __MINGW64_VERSION_MAJOR);
+    printf("__MINGW64_VERSION_MINOR: %d\n", __MINGW64_VERSION_MINOR);
 #endif
 #ifdef __SUNPRO_C
     printf("__SUNPRO_C: %#x\n", __SUNPRO_C);
