@@ -18,6 +18,7 @@ int main() {
     printf("__clang_major__: %d\n", __clang_major__);
     printf("__clang_minor__: %d\n", __clang_minor__);
     printf("__clang_patchlevel__: %d\n", __clang_patchlevel__);
+    printf("__clang_version__: %s\n", __clang_version__);
 #endif
 #ifdef __GNUC__
     printf("__GNUC__: %d\n", __GNUC__);
